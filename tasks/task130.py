@@ -1,0 +1,1 @@
+R=range(3);p=lambda d:[[[v for a in R if(v:=d[i*3+a][j*3])-5][0]for j in R]for i in R]

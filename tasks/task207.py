@@ -1,0 +1,1 @@
+def p(d):A=[[r[j:j+2]for r in d[i:i+2]]for i in[0,3]for j in[0,3]];return min(A,key=A.count)

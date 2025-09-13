@@ -1,0 +1,1 @@
+p=lambda d:[r[:len(d[0])//3]for r in d]

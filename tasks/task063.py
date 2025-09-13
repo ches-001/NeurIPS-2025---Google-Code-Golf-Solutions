@@ -1,0 +1,1 @@
+p=lambda d:[[[c or 3,c][any(r[1:-1])&any(C[1:-1])]for c,C in zip(r,zip(*d))]for r in d]

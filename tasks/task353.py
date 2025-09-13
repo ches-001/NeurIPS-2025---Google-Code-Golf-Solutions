@@ -1,0 +1,1 @@
+def p(d):W=len(d[0]);Q=sum(d,[]).index;D=divmod;I,J=D(Q(3),W);X,Y=D(Q(4),W);d[I][J]=0;d[I+(X>I)-(X<I)][J+(Y>J)-(Y<J)]=3;return d

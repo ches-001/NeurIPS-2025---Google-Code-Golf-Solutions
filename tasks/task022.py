@@ -1,0 +1,1 @@
+def p(d):R=range;M=R(11);O=[[0]*3 for _ in R(3)];U=R(-1,2);[O[1+i].__setitem__(1+j,d[r+i][c+j]or O[1+i][1+j])for r in M for c in M if d[r][c]==5 for i in U for j in U];return O

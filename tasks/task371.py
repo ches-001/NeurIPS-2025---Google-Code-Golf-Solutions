@@ -1,0 +1,1 @@
+def p(d):W=len(d[0]);S=sum(d,[]);A,B=[k for k in range(len(S))if S[k]];K=(A+B)//2;U=K//W;V=K%W;d[U][V]=d[U-1][V]=d[U+1][V]=d[U][V-1]=d[U][V+1]=3;return d

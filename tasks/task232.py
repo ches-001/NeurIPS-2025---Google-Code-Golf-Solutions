@@ -1,0 +1,1 @@
+p=lambda d:[[[r[I:=r.index(max(r))],any(r)*5][(I-j)%2]*(j>=I)for j in range(len(r))]for r in d]

@@ -1,0 +1,1 @@
+def p(d,R=range(16)):d=[[[c:=d[i][j],0][len([1 for a,b in[(i+1,j),(i-1,j),(i,j+1),(i,j-1)]if 0<=a<16>b>=0 and d[a][b]==c!=0])<2]for j in R]for i in R];A=sum(d,[]);M=max({*A}-{0},key=A.count);return[[[c,0][c!=M] for c in r]for r in d]

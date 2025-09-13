@@ -1,0 +1,1 @@
+def p(d):S=len({*sum(d,[])})-1;R=range(len(d)*S);return[[d[i//S][j//S]for j in R]for i in R]

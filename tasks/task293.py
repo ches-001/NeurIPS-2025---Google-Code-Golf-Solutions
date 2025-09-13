@@ -1,0 +1,1 @@
+p=lambda d:[[[c,[r[0],C[0]][c==r[0]]][all(r+[*C])]for c,C in zip(r,zip(*d))]for r in d]

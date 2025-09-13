@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[c+(c!=2)*any(-2<x-i<2>y-j>-2 for x,R in E(d)for y,C in E(R)if C==2)for j,c in E(r)]for i,r in E(d)] 

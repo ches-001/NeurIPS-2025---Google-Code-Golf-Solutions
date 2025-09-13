@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[[[c,d[x][j]][d[x][j]==d[6+x][j]!=1],r[y]][r[y]==r[6+y]!=1]if(x:=i%3)!=2 and(y:=j%3)!=2 else 0 for j,c in E(r)]for i,r in E(d)]

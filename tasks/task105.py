@@ -1,0 +1,1 @@
+def p(d,E=enumerate):A,B=zip(*[(i,j)for i,r in E(d)for j,c in E(r)if c]);S=sorted;I,*_,X=S(A);J,*_,Y=S(B);F=lambda W:[[[c,c or 2][W(i,j,r,C)and J<=j<=Y and I<=i<=X]for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)];d=F(lambda i,j,r,C:i in[I,X]or j in[J,Y]);return F(lambda i,j,r,C:sum(map(bool,r))>3 or sum(map(bool,C))>3)

@@ -1,0 +1,1 @@
+p=lambda d:[[r[0]if r[0]==r[-1]else c for c in r]for r in d]

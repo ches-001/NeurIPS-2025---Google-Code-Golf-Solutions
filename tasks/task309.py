@@ -1,0 +1,1 @@
+p=lambda d:eval(str(d).replace("7","5"))

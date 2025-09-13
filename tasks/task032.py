@@ -1,0 +1,1 @@
+p=lambda d:[*zip(*[[0]*c.count(0)+[i for i in c if i]for c in zip(*d)])]

@@ -1,0 +1,1 @@
+R=range(17);p=lambda d:[[(d[0][5]if d[r%6][c%6]not in[0,d[0][5]]and d[r][c]!=d[r%6][c%6]else d[r][c])for c in R]for r in R]

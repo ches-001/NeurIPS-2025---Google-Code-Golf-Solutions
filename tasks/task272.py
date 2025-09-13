@@ -1,0 +1,1 @@
+def p(d,R=range):H=len(d);W=len(d[0]);return[[[c:=d[i][j],1][c and 1-any(0<=a<H>0<=b<W and d[a][b]for a,b in[(i,j+1),(i,j-1),(i+1,j),(i-1,j)])]for j in R(W)]for i in R(H)]

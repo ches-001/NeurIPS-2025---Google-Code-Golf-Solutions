@@ -1,0 +1,1 @@
+p=lambda d:[[5*(len({*r})==1)]*3 for r in d]

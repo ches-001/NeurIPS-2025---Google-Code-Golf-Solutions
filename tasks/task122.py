@@ -1,0 +1,1 @@
+R=lambda v:eval(str(v).replace('2','0'));p=lambda d:[R(d[:2])+d[:-2],[R(r[:2])+r[:-2]for r in d]][any(map(lambda r:sum(r)>7,d))]

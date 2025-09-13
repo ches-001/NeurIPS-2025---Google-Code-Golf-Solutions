@@ -1,0 +1,1 @@
+p=lambda d:[e+e[::-1]for e in d+d[::-1]]

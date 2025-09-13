@@ -1,0 +1,1 @@
+p=lambda d:[[[[[c,max(C)][b:=(8 in C)],max(r)][a:=(2 in r)],4][a and b] for c,C in zip(r,zip(*d))]for r in d]

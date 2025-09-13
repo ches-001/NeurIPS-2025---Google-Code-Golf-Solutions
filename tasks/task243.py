@@ -1,0 +1,1 @@
+def p(d,n=27):H=len(d);R=range(H);d=[[[c:=d[i][j],1][c==0 and any(0<=a<H>b>=0 and d[a][b]==1 for a,b in[(i-1,j),(i+1,j),(i,j+1),(i,j-1)])]for j in R]for i in R];return p(d,n-1)if n else d

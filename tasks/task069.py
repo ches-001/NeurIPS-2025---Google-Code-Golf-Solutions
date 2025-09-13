@@ -1,0 +1,1 @@
+def p(d,E=enumerate,S=list.__setitem__):V=[(i,j,c,S(r,j,0))[:3]for i,r in E(d)for j,c in E(r)if c not in[0,8]];J=[(v[0]-V[0][0],v[1]-V[0][1],v[2])for v in V];[S(d[i+e[0]],j+e[1],e[2])for i,r in E(d)for j,c in E(r)if c==8 for e in J];return d

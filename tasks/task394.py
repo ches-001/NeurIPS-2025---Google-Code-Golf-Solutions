@@ -1,0 +1,1 @@
+p=lambda d:[[[w for w in d if w!=r if all(a==b for a,b in zip(r,w)if a!=0)][0][j]for j,c in enumerate(r)if c==0]for r in d if 0 in r]

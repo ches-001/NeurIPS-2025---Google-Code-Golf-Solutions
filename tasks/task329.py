@@ -1,0 +1,1 @@
+def p(d):N=len(d)//2;return[[0]*N+r[N:N+1]+[0]*N for r in d]

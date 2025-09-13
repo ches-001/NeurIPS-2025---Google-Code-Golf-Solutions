@@ -1,0 +1,1 @@
+def p(d):S=[*{*sum(d,[])}-{0}];return[[S[c==S[0]]for c in r if c]for r in d if any(r)]

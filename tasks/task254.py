@@ -1,0 +1,1 @@
+def p(d,R=range(9)):D=[*zip(*d)];S=sorted(D,key=lambda x:x.count(5))[D.count((0,)*9):];return[[[2*((c:=d[i][j])==5)*(D[j]==S[0]),1*(c==5)][D[j]==S[-1]]for j in R]for i in R]

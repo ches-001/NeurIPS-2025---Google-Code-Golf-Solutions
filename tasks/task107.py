@@ -1,0 +1,1 @@
+def p(d):N=len(set(sum(d,[])))-1;R=range(5*N);return[[d[i//N][j//N]or 2*(sum([d[a//N][b//N]==max(d[0][:4]+d[1][:4])for a in R for b in R if abs(a-i)==abs(b-j)])==N*2)for j in R]for i in R]

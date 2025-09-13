@@ -1,0 +1,1 @@
+p=lambda d:[[a and b and 2 for a,b in zip(m[:3],m[4:])]for m in d]

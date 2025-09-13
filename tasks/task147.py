@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[[c,8][c and any([d[i+a][j+b]for a,b in zip((0,1,0,-1),(1,0,-1,0))if 0<=i+a<len(d)>0<=j+b<len(r)])]for j,c in E(r)]for i,r in E(d)]

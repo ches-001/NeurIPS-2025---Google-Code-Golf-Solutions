@@ -1,0 +1,1 @@
+p=lambda d:[r[:2]for r in d[:2]]

@@ -1,0 +1,1 @@
+p=lambda d:[r+r for r in d]

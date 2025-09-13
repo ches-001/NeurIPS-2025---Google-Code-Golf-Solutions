@@ -1,0 +1,1 @@
+R=range(10);p=lambda d:[[r[j-1:j+2]for r in d[i+1:i+4]]for i in R for j in R if d[i][j]==5][0]

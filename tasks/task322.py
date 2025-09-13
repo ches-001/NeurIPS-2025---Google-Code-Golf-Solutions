@@ -1,0 +1,1 @@
+p=lambda d:[[max(C[:i])for C in zip(*d)]for i in[1,2,3]]

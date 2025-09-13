@@ -1,0 +1,1 @@
+def p(d):N=sum(d,[]).count(0);R=range(N*3);return[[d[i%3][j%3]*((i//3)*N+(j//3)<9-N)for j in R]for i in R]

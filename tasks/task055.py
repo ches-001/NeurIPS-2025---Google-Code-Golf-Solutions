@@ -1,0 +1,1 @@
+def p(d):E=enumerate;P=[i for i,r in E(d)if all(r)];Q=[j for j,c in E(zip(*d))if all(c)];M={1:6,4:4,5:3,8:2,9:1};return[[(O:=[i for i,b in E([P[0]<i<P[1],Q[0]<j<Q[1],i<P[0],i>P[1],j<Q[0],j>Q[1]])if b]+[0]*2,M.get(O[0]*6+O[1],r[j]))[1]for j,_ in E(r)]for i,r in E(d)]

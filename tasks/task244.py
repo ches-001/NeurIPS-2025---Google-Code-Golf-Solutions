@@ -1,0 +1,1 @@
+def p(d):D=len([r for r in d if len({*r})==1])+1;R=range(D);D=-(len(d)//-D);return[[d[D*i][D*j]for j in R][::-1]for i in R]

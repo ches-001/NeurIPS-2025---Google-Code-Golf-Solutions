@@ -1,0 +1,1 @@
+def p(d):S=[*dict.fromkeys(sum(d,[]))];C=2*len(S)-2;R=range(C+1);return[[S[min(min(C-i,C-j),min(i,j))]for j in R]for i in R]

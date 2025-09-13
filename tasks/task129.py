@@ -1,0 +1,1 @@
+def p(d):C=sum(d,[]);return[[max({*C},key=C.count)]*3]*3

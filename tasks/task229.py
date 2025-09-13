@@ -1,0 +1,1 @@
+def p(d):A=sum(d,[]);M=max({*A},key=A.count);return[[[c,5][c!=M]for c in r]for r in d]

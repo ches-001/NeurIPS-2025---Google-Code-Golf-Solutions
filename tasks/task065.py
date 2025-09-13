@@ -1,0 +1,1 @@
+def p(d,R=range,L=len):N=L(d);C=[*zip(*d)];F=N//2;f=F+1;return[[[d[f*(i//f)+a][f*(j//f)+b]for b in R(F)]for a in R(F)]for i in R(N) for j in R(N)if L({*d[i]})==L({*C[j]})==3][0]

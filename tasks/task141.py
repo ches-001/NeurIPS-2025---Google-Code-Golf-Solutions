@@ -1,0 +1,1 @@
+def p(d):N=len(d);R=range(N);C=sum(d,[]);M=max(C);B=C.index(M);return[[[0,M][abs(i-B//N)==abs(j-B%N)]for j in R]for i in R]

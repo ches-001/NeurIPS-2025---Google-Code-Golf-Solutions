@@ -1,0 +1,1 @@
+p=lambda d:[[*filter(bool,sum(d,[]))]]

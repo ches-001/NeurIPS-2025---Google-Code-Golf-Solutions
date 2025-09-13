@@ -1,0 +1,1 @@
+def p(d):a,b=17,0;[(a:=min(a,r.index(8)),b:=max(b,16-r[::-1].index(8)))for r in d if 8 in r];return[[[c,3][8 in r and a<=j<=b and c!=8]for j,c in enumerate(r)]for r in d]

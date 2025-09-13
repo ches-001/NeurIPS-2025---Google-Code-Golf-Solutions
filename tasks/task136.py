@@ -1,0 +1,1 @@
+def p(d,R=range(10)):C=sum(d,[]);W=C.index(2);B=C.index(1);return[[[[d[i][j],1][i-B//10==j-B%10 and i<B//10],2][i-W//10==j-W%10 and i>W//10]for j in R]for i in R]

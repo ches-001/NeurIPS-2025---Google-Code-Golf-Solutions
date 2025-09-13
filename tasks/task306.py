@@ -1,0 +1,1 @@
+def p(d,R=range):H=len(d);W=len(d[0]);return[[4 if 9 in[i%10,j%10]else max(d[10*a+i%10][10*b+j%10]for a in R(H//9)for b in R(W//9))for j in R(W)]for i in R(H)]

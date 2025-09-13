@@ -1,0 +1,1 @@
+E=enumerate;p=lambda d:[[[c,0][c and c in r[j+1:]and c in r[:j]and c in C[i+1:]and c in C[:i]]for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

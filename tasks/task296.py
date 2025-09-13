@@ -1,0 +1,1 @@
+p=lambda d,R=[0,1,2]:[[d[i][j]or d[i][4+j]or d[2+i][j]or d[2+i][4+j]for j in R]for i in R]

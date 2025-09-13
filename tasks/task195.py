@@ -1,0 +1,1 @@
+def p(d,R=range):d=[[d[i][j]for j,C in zip(R(len(d[0])),zip(*d))if any(C)]for i in R(len(d))if any(d[i])];return[[d[3*(x:=i%3)][3*(y:=j%3)]*(d[3*(i//3)+x][3*(j//3)+y]>0)for j in R(9)]for i in R(9)]

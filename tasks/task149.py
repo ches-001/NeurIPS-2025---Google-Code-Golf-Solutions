@@ -1,0 +1,1 @@
+def p(d,R=range(3)):V=[[d[4*i+a][4*j+b]for a in R for b in R].count(0)for i in R for j in R];return[[V[i*3+j]==min(V)for j in R]for i in R]

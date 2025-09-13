@@ -1,0 +1,1 @@
+def p(d):W=sum(d,[]);M={*W};S=W.count(min(M,key=W.count));return[[[[0,C[0]][W.count(C[0])==S],r[0]][W.count(r[0])==S]for C in zip(*d)]for r in d]

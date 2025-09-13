@@ -1,0 +1,1 @@
+E=enumerate;p=lambda d:[[[c,d[4*(i//4)+1][4*(j//4)+1]+5][c!=5]for j,c in E(r)]for i,r in E(d)]

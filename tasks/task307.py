@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[d[i//2][j//2]for j,_ in E(r*2)]for i,r in E(d*2)]

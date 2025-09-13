@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate,A=any:[[[c,8][A(r[j:])*A(r[:j])|A(C[i:])*A(C[:i])]for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

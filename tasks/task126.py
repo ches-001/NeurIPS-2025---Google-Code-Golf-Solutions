@@ -1,0 +1,1 @@
+p=lambda d:d[:-1]+[[(sum(map(bool,C))==1)*4 for C in zip(*d)]]

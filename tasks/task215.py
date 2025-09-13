@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[r for j,r in E(d)if any(r)and j%3==i%3][0]for i,_ in E(d)]

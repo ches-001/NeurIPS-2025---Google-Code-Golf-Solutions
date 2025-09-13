@@ -1,0 +1,1 @@
+def p(d):F=lambda Q:[*map(all,Q)].index(1);A=F(d);B=F(zip(*d));d[A-1][B-1:B+2]=d[A+1][B-1:B+2]=[4]*3;d[A][B-1]=d[A][B+1]=4;return d

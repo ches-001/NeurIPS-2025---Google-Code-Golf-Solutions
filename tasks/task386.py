@@ -1,0 +1,1 @@
+R=range;p=lambda d:[[(not d[i][j]|d[i][j+4])*3 for j in R(3)]for i in R(4)]

@@ -1,0 +1,1 @@
+def p(d):S=sorted(map(max,zip(*d)),key=0..__eq__);return[S[:3]]+[S[3:6][::-1]]+[S[6:9]]

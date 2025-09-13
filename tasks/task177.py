@@ -1,0 +1,1 @@
+p=lambda d:[[c for c in r if c][::-1]for r in d if any(r)]

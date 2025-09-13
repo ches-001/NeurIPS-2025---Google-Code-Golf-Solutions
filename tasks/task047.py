@@ -1,0 +1,1 @@
+A=any;p=lambda d:[[c or[sorted(r+[*C])[-1],2][A(r)and A(C)]if A(r+[*C])else c for c,C in zip(r,zip(*d))]for r in d]

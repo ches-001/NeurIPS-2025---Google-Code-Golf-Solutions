@@ -1,0 +1,1 @@
+def p(d,E=enumerate):(I,J),(X,Y)=[(i,j)for i,r in E(d)for j,c in E(r)if c];return[[c or 4*((2 in r or 8 in C)*(min(I,X)<=i<=max(I,X)and min(J,Y)<=j<=max(J,Y)))for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

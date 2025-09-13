@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[c]for i,r in E(d[1:-1],1)for j,c in E(r[1:-1],1)if c*all(0<d[i+x][j+y]!=c for x in[-1,1]for y in[-1,0])]

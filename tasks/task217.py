@@ -1,0 +1,1 @@
+def p(d,R=range(9)):d=[[c for c,C in zip(r,zip(*d))if any(C)]for r in d if any(r)];return[[[0,d[i%3][j%3]][d[i//3][j//3]>0]for j in R]for i in R]

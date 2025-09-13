@@ -1,0 +1,1 @@
+def p(d):N=len(d);R=range;return[[[0,d[i][j] or[(v:=max(d[a][b]for a in R(max(0,i-1),min(N-1,i+2))for b in R(max(0,j-1),min(N-1,j+2))))//2,v*2][v==3]][v>0]for j in R(N)]for i in R(N)]

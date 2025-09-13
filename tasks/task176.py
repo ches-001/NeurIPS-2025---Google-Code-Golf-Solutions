@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[c+4*[4<j%12<8,j%6==0,0<=(j+1)%12<3][i]for j,c in E(r)]for i,r in E(d)]

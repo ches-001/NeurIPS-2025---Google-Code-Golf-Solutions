@@ -1,0 +1,1 @@
+F=lambda d:eval(str(d).replace('3, 2','8, 0').replace('2, 3','0, 8'));p=lambda d:[*zip(*F([*zip(*F(d))]))]

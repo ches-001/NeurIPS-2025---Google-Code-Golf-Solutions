@@ -1,0 +1,1 @@
+def p(d):L=range;R=L(11);M=L(3);G=[(r//4,c//4)for r in R for c in R if d[r][c]==8];P=[3,7];O=[[(5 if c in P or r in P else 0)for c in R]for r in R];g=[(i,j)for i in M for j in M if(i,j)not in G][0];[O[4*i+r].__setitem__(4*j+c,d[4*g[0]+i][4*g[1]+j])for i in M for j in M for r in M for c in M];return O

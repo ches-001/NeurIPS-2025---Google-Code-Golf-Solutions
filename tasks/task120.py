@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[[c,8][sum(map(bool,r[j-1:j+2]+[*C[i-1:i+2]]))==6]for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

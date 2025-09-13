@@ -1,0 +1,1 @@
+def p(d,R=range):H=len(d);W=len(d[0]);return[[8*(i*j==0 or i==H-1 or j==W-1)for j in R(W)]for i in R(H)]

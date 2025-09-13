@@ -1,0 +1,1 @@
+def p(d):Q=len(d)//2;C=d[Q][Q];d=[r[:Q]for r in d[:Q]];return[[bool(c)*C for c in r+r[::-1]]for r in d+d[::-1]]

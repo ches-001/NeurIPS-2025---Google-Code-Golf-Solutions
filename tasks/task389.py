@@ -1,0 +1,1 @@
+def p(d):S={*sum(d,[])}-{5};return[[[0,max(S)][c==5]for c in r]for r in d]

@@ -1,0 +1,1 @@
+R=range(24);p=lambda d:[[d[23-i][23-j]for j in R if d[i][j]==1]for i in R if 1 in d[i]]

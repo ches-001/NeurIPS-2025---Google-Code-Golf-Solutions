@@ -1,0 +1,1 @@
+def p(d):M=len(d);N=len(d[0]);R=range;A=B=1;[A:=all([o==r[0]for o in r])+A for r in d];[B:=all([o==d[0][i]for o in [d[f][i]for f in R(M)]])+B for i in R(N)];return [[d[0][0]]*B]*A

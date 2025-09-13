@@ -1,0 +1,1 @@
+p=lambda d:[[r[j%6]for j in range(len(r)*2)]for r in d]

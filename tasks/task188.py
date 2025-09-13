@@ -1,0 +1,1 @@
+p=lambda d:[d[:len(d)//2],[*zip(*(D:=[*zip(*d)])[:(W:=len(d[0])//2)])]][D[:W]==D[W:]]

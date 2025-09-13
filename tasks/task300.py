@@ -1,0 +1,1 @@
+def p(d):A=sum(d,[]);S={*A}-{0};M=max(S,key=A.count);return[[c for c,C in zip(r,zip(*d))if M in C]for r in d if M in r]

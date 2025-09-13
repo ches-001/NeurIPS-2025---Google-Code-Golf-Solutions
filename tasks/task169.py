@@ -1,0 +1,1 @@
+def p(d,R=range(10)):F=lambda i,j,V:0<=i<10>j>=0 and d[i][j]and(i,j)not in V and not V.add((i,j))and[F(i+a,j+b,V)for a,b in[(-1,0),(1,0),(0,-1),(0,1)]]and len(V);return[[[0,0,3,2,1][F(i,j,set())]for j in R]for i in R]

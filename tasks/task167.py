@@ -1,0 +1,1 @@
+p=lambda d,R=[0,1,2]:[[5*(i==[0,j,2-j][len({*sum(d,[])})-1])for j in R]for i in R]

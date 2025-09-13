@@ -1,0 +1,1 @@
+def p(d):R=range;H=len(d);W=len(d[0]);F=lambda i,j:d[i][j]and not d[i].__setitem__(j,0) and bool([F(a,b)for a,b in[(i,j+1),(i,j-1),(i+1,j),(i-1,j)]if 0<=a<H>0<=b<W]);N=sum(F(k//W,k%W)for k in R(H*W));return[[0]*i+[8]+[0]*(N-i-1)for i in R(N)]

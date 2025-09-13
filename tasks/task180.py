@@ -1,0 +1,1 @@
+p=lambda d,A=range(4):[[d[i][j+4]or d[i+4][j]or d[i+4][j+4]or d[i][j]for j in A]for i in A]

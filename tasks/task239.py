@@ -1,0 +1,1 @@
+def p(d):A=sum(d,[]);L=A.count;S=sorted({*A},key=L)[::-1];M=L(S[0]);return[*zip(*[[c]*(n:=L(c))+[0]*(M-n)for c in S])]

@@ -1,0 +1,1 @@
+p=lambda d,R=range(3):[[2*(3!=i*3+j<(C:=sum(sum(d,[])))or i*3+j==C==4)for j in R]for i in R]

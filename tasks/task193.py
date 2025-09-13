@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[c*(c>0 and sum(r[abs(j-1):j+2:2]+[*C[abs(i-1):i+2:2]])>=2*c)for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

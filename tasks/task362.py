@@ -1,0 +1,1 @@
+def p(d):N=str(d).count('5');return[[c*(c!=5)for c in r[N:]+r[:N]]for r in d[10-N:]+d[:10-N]]

@@ -1,0 +1,1 @@
+def p(d,L=len,R=range):A=R(-1,2);M=L(d);N=L(d[0]);return[[[0,d[i][j]][d[i][j]and any([d[i+a][j+b]for a in A for b in A if 0<=a+i<M>0<=b+j<N and not a==b==0])]for j in R(N)]for i in R(M)]

@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[(c>0)*d[i//(w:=((s:=len(r)-1)-3)//2)*s][j//w*s]for j,c in E(r[2:-2])]for i,r in E(d[2:-2])]

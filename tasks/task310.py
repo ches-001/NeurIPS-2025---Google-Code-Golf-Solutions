@@ -1,0 +1,1 @@
+def p(d):S=sum(d,[]);M=min({*S},key=S.count);return[[c for c,C in zip(r,zip(*d))if M in C]for r in d if M in r]

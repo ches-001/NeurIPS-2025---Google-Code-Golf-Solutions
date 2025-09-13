@@ -1,0 +1,1 @@
+p=lambda d:d[:2]+[r*len(d[0])for r in zip(*d[:1])]*2

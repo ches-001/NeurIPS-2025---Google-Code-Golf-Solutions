@@ -1,0 +1,1 @@
+def p(d,R=range(11)):A=[(i//4,j//4,i%4,j%4)for i in R for j in R if d[i][j]==4][0];return[[5 if i%4==3 or j%4==3 else[0,d[4*A[0]+i%4][4*A[1]+j%4]][(i//4,j//4)==A[2:]]for j in R]for i in R]

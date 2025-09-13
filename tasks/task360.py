@@ -1,0 +1,1 @@
+p=lambda d:[[r[j]|r[8-j]for j in range(4)]for r in d]

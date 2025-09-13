@@ -1,0 +1,1 @@
+def p(d):S=9-sum(d,[]).count(0);R=range(3*S);return[[d[i//S][j//S]for j in R]for i in R]

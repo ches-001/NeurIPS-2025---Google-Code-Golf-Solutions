@@ -1,0 +1,1 @@
+def p(d,R=range):H,W=len(d),len(d[0]);return max([(E:=[r[j+1:y]for r in d[i+1:x]],sum(F:=sum(E,[])),M:=max([0]+F),(T:=[[M]*(y-j+1)])+[[M]+r+[M]for r in E]+T)for i in R(H)for j in R(W)for x in R(i,H)for y in R(j,W)if all(d[i][j:y]+d[x][j:y]+[d[t][j]*d[t][y]for t in R(i,x)])],key=lambda x:x[1])[3]

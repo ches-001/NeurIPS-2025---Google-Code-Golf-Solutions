@@ -1,0 +1,1 @@
+p=lambda d:[[[e,f][e==4]for e,f in zip(a,b[::-1])]for a,b in zip(d,d[::-1])]

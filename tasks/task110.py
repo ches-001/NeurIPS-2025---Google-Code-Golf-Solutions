@@ -1,0 +1,1 @@
+p=lambda d,R=range(29):[[max([r[j]for r in d if sum([d[i][y]==r[y]>0 for y in R])+r.count(0)+d[i].count(0)==29])for j in R]for i in R]

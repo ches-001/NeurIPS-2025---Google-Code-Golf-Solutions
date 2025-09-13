@@ -1,0 +1,1 @@
+R=range(16);p=lambda d:[[d[15-i][15-j]for j in R if d[i][j]==0]for i in R if 0 in d[i]]

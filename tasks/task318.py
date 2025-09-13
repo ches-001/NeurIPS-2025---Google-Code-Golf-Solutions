@@ -1,0 +1,1 @@
+p=lambda d:[[bool(a|b)*3 for a,b in zip(*R)]for R in zip(d[:4],d[5:])]

@@ -1,0 +1,1 @@
+def p(d,R=range(18)):C=[*zip(*d)];return[[d[i//2][j//2]for j in R if any(C[j//2])]for i in R if any(d[i//2])]

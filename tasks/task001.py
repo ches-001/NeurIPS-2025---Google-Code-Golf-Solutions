@@ -1,0 +1,1 @@
+R=range(9);p=lambda d:[[d[r//3][c//3]and d[r%3][c%3]for c in R]for r in R]

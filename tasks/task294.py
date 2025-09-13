@@ -1,0 +1,1 @@
+p=lambda d,R=range(10):[[[d[i][j],2][all(0<i<9>j>0 and d[a+i][b+j]for a,b in[(0,1),(0,-1),(1,0),(-1,0)])]for j in R]for i in R]

@@ -1,0 +1,1 @@
+p=lambda d:[[(0<a+b<3)*3 for a,b in zip(*r)]for r in zip(d[:4],d[5:])]

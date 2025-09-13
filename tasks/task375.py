@@ -1,0 +1,1 @@
+E=enumerate;p=lambda d:[[c*(i!=j and i+j!=len(r)-1) for j,c in E(r)]for i,r in E(d)]

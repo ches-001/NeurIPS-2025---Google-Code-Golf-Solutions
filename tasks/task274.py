@@ -1,0 +1,1 @@
+def p(d,R=[0,1,2]):N=sum(map(lambda r:(sum(r)==10),d));return[[(i*3+[j,2-j][i==1]<N)*8 for j in R]for i in R]

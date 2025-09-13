@@ -1,0 +1,1 @@
+def p(d):Q=range;R=Q(3);D=Q(11);A=[sum([(C:=v,1)[1]for r in R for c in R if(v:=d[4*i+r][4*j+c])])for i in R for j in R];return[[[[0,C][A[r//4*3+c//4]==max(A)],d[r][c]][d[r][c]==5] for c in D]for r in D]

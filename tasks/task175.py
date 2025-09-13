@@ -1,0 +1,1 @@
+p=lambda d,w=0,R=range(21):p([[d[i][j]or d[j][i]or d[i+1][j+1]for j in R]for i in R],w+1)if w<4 else d

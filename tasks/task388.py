@@ -1,0 +1,1 @@
+p=lambda d:[[[c,c or 8][sum(C)>0]for c,C in zip(r,zip(*(d)))]*2 for r in d*2]

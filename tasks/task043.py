@@ -1,0 +1,1 @@
+E=enumerate;p=lambda d:[[2 if d[0][j] and d[i][-1]else 0 or c for j,c in E(r)]for i,r in E(d)]

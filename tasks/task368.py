@@ -1,0 +1,1 @@
+def p(d,E=enumerate):V=[(i,j,c)for i,r in E(d)for j,c in E(r)if c not in[0,5]];J=[(v[0]-V[0][0],v[1]-V[0][1],v[2])for v in V];[d[i+e[0]].__setitem__(j+e[1],e[2])for i,r in E(d)for j,c in E(r)if c==5 for e in J];return d

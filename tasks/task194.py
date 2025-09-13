@@ -1,0 +1,1 @@
+def p(d):d=d+[*zip(*d)][::-1];return[[*r]+[*R[::-1]]for r,R in zip(d,d[::-1])]

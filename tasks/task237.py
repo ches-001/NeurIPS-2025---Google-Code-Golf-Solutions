@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[[[c,([0]+[max(a)for a in d[:i]if any(a)])[-1]][j==len(r)-1],max(r)][any(r[:j])]for j,c in E(r)]for i,r in E(d)]

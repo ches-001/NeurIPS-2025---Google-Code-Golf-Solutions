@@ -1,0 +1,1 @@
+p=lambda d,R=range:[[d[3*(i//3)+1][3*(j//3)+1]//5 for j in R(9)]for i in R(9)]

@@ -1,0 +1,1 @@
+p=lambda d:[[(c+C==2)*3 for c,C in zip(r,R)]for r,R in zip(d[:6],d[7:])]

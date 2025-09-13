@@ -1,0 +1,1 @@
+p=lambda d,R=range(10):[[d[0][max(i,j)%(5-(d[0][4]==0))]for j in R]for i in R]

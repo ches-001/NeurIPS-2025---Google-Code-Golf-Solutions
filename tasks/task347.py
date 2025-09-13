@@ -1,0 +1,1 @@
+R=range;p=lambda d:[[bool(d[i][j]|d[i][j+3])*6 for j in R(3)]for i in R(3)]

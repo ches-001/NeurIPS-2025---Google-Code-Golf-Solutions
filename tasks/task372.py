@@ -1,0 +1,1 @@
+p=lambda d:[[c+C for c,C in zip(r,R)]for r,R in zip(d[:5],d[6:])]

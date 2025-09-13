@@ -1,0 +1,1 @@
+p=lambda d:[[8*(not a|b)for a,b in zip(m,m[4:])]for m in d]

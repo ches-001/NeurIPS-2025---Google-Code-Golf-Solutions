@@ -1,0 +1,1 @@
+def p(d,R=range(9)):S=sum(d,[]);M=max({*S},key=S.count);return[[(d[i//3][j//3]==M)*d[i%3][j%3]for j in R]for i in R]

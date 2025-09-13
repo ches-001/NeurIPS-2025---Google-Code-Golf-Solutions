@@ -1,0 +1,1 @@
+def p(d,R=range):[d[i+a].__setitem__(j+b,d[1+a][1+b])for i in R(9)for j in R(13)if d[i][j]==1 for a in R(-1,2)for b in R(-1,2)];return d

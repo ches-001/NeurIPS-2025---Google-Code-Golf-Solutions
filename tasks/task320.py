@@ -1,0 +1,1 @@
+p=lambda d:[[[c,8][len(C)-1-i<C.count(2)//2]for c,C in zip(r,zip(*d))]for i,r in enumerate(d)]

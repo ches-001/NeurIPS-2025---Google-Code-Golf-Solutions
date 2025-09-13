@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[[c,9][(c==0)*any(r[:j])*any(r[j:])*(0<i<9)]for j,c in E(r)]for i,r in E(d)]

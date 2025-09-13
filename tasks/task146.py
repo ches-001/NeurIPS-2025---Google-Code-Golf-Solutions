@@ -1,0 +1,1 @@
+p=lambda d:[d[i:i+3]for i in range(0,9,3)if d[i:i+3]!=[*map(list,zip(*d[i:i+3]))]][0]

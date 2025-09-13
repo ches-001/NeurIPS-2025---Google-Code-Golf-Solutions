@@ -1,0 +1,1 @@
+p=lambda d:eval(str(d[-1:]+d[:-1]).replace('8','2'))
