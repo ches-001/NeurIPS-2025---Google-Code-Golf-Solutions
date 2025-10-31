@@ -1,0 +1,1 @@
+p=lambda d,t=3,E=enumerate:-t*d or[[exec("l=len(a);r[j+1:j+1+l]=[2]*l;exec('for x in range(9):d[i+1-x//3][j+1-x%3]=8;r[j]=2')")for i,r in E(d)for j,c in E(r)if c>7 if 2 in r[j:]if sum(a:=r[j+1:r.index(2,j+1)])<1!=d if a],p([*map(list,zip(*d[::-1]))],t-1)][1]

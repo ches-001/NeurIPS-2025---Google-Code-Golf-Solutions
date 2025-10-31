@@ -1,5 +1,1 @@
-def p(d,E=enumerate,w=0):
- for r in d:
-  for j,c in E(r):
-   if c and c in r[j+1:]:J=r[j+1:].index(c);r[j+1:j+J+1]=[c]*J
- d=[*map(list,zip(*d))];return d if w else p(d,E,w+1)
+p=lambda d:[d:=[[c or[c,m:=max([s:={0},{*r}-s][sum(r)>0],key=r.count)][m in r[:j]and m in r[j:]]for j,c in enumerate(r)]for r in zip(*d)]for _ in[0]*2][1]

@@ -1,5 +1,1 @@
-def p(d,E=enumerate,w=0):
- for i,r in E(d):
-  for j,_ in E(r):
-   if 1<i<13 and 1<j<13 and r[j-2]==r[j+2]==d[i-2][j]==d[i+2][j]==1:d[i]=[[e,6][e==8]for e in r]
- d=[*map(list,zip(*d))];return d if w else p(d,E,w+1)
+p=lambda d:[(d:=[*zip(*d)],[exec('d[i]=[[e,6][e==8]for e in r]')for k in range(121)if(r:=d[i:=k//11+2])[(j:=k%11+2)-2]+d[i-2][j]+d[i+2][j]+r[j+2]==4],d)for _ in[0]*2]and d

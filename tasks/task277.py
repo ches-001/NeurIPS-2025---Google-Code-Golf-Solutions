@@ -1,0 +1,1 @@
+p=lambda d,t=27,l=0:-t*d or p([*zip(*[[[[(h:=a>0)*(c or b)|a,h<<(l:=l+1)][a==8],h+(a==min(A:=sum(d,type(r)()),key=A.count))][t<5]*(t>3)or a for a,b,c in zip(r,[*r[1:],0],[*q[1:],0])]for r,q in zip(d,[*d[1:],[0]*10])][::-1])],t-1)

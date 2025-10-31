@@ -1,0 +1,1 @@
+def p(d,E=enumerate):A=sum(d,[]);K=A.index(max(A));W=len(d);return[[r,([4,0]*22)[K%W:W+K%W]][i<K//W+1]for i,r in E(d[-1:]+d[:-1])]

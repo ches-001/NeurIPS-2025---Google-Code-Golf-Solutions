@@ -1,0 +1,1 @@
+def p(d,E=enumerate,F=filter):D=[r[:]for r in d];Q=[[(C[i],exec('d[i][j]=0'))[0]for j,C in E(zip(*D))if 8 in C if d]for i,r in E(D) if 8 in r];N=len(P:=[*zip(*F(any,zip(*F(any,d))))]);[P:=[[[[c,r[0]][i-j>0<N-1-i-j>=1<i<N-2],(b:=0<i<N-1>j>0)and((a:=Q[i-1][j-1])>0)*(c or a)][(t==7)&b]for j,c in E(r)]for i,r in E(zip(*P[::-1]))]for t in range(8)];return P

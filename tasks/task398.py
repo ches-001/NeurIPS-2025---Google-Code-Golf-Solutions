@@ -1,1 +1,1 @@
-def p(d):M=25-5*sum(d,[]).count(0);return[[0]*(M-i)+(r+[0]*25)[:i]for i in range(1,M+1)for r in d]
+def p(d):r,=d;S=len({*r}-{0})*5;return[([0]*i+r+[0]*S)[:S]for i in range(S)][::-1]

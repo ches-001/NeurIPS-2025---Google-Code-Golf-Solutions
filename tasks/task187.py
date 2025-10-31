@@ -1,0 +1,1 @@
+p=lambda d,t=59:-t*d or p([[[[c,2][t<4>c<1],3][a==3>c<1]for a,c in zip((3,)+r,r)]for r in zip(*d[::-1])],t-1)

@@ -1,1 +1,1 @@
-p=lambda d,R=range(10):[[[d[i][j],2][all(0<i<9>j>0 and d[a+i][b+j]for a,b in[(0,1),(0,-1),(1,0),(-1,0)])]for j in R]for i in R]
+p=lambda d,R=range(1,9):[exec('r[j]=2')for i in R for j in R if d[i+1][j]*(r:=d[i])[j+1]*d[i-1][j]*r[j-1]]and d

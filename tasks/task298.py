@@ -1,0 +1,1 @@
+def p(d):V=[d[i][i]for i in range(len(d)//2)];return[[*map(dict(zip(V,V[-1:]+V)).get,r)]for r in d]

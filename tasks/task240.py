@@ -1,0 +1,1 @@
+p=lambda d,t=90,E=enumerate:-t*d or p([*zip(*[[c or[c,m:=t//9+1][m in r and d[i-2][r.index(m)-2]==m==r[j-2]]|r[18-j]for j,c in E(r)]for i,r in E(d)])],t-1)

@@ -1,0 +1,1 @@
+p=lambda d:[[w:=d[0],[a+b for a,b in zip([0]+w[:-1],w[1:]+[0])]][i%2]for i in range(len(d))]

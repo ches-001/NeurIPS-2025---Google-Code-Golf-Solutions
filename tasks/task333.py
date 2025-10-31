@@ -1,0 +1,1 @@
+p=lambda d:[d:=[[[max(r[:j]+(0,))*(3 in r[j:]),c][c>0]for j,c in enumerate(r)]for r in zip(*d[::-1])]for _ in d][3]

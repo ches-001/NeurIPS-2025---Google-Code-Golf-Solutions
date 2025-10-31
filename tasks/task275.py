@@ -1,0 +1,1 @@
+def p(d):N=min(H:=len(d),W:=len(d[0]));R=range(N*N);K=sum(d,[]).index(8);a=K//W//N;b=K%W//N;c=H>W;return[[d[N*(1-a)*c+i//N][N*(1-b)*(1-c)+j//N]*(d[N*a+i%N][N*b+j%N]>0)for j in R]for i in R]

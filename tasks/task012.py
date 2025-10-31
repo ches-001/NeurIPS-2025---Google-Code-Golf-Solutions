@@ -1,8 +1,1 @@
-def p(d):
- R=range;M=R(12);C=lambda i:max(0,min(i,12-1))
- for r in M:
-  for c in M:
-   v=d[r][c];u=d[C(r-1)][c];b=d[C(r+1)][c];a=d[r][C(c-1)];i=d[r][C(c+1)]
-   if u==b==a==i!=0:
-    for i in R(1,3):d[r-i][c-i]=d[r+i][c+i]=d[r-i][c+i]=d[r+i][c-i]=v;d[r-i][c]=d[r+i][c]=d[r][c-i]=d[r][c+i]=u
- return d
+def p(d):R=range;D=[r[:]for r in d];[exec('D[i+a][j+b]=[d[i+a][j+b],[v,r[j]][g:=abs(a)==abs(b)]][g or a*b==0]')for k in R(64)if (r:=d[i:=k//8+2])[(j:=k%8+2)-1]*(v:=r[j+1])for a in R(-2,3)for b in R(-2,3)if D];return D

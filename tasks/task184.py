@@ -1,3 +1,1 @@
-def p(d):
-    F=lambda d:[[*dict.fromkeys([c for c in r if c])]for r in d if any(r)]
-    return[*zip(*F(zip(*F(d))))]
+p=lambda d,t=1,a=0:-t*d or p([([max(C[a:i])for C in d],a:=i)[0]for i,r in enumerate([*zip(*d),*[[]]])if sum(r)<1],t-1)

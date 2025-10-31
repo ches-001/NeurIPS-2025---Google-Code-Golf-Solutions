@@ -1,0 +1,1 @@
+def p(d,R=range):H=len(d);[w.__setitem__(slice(j+1,y),[[2,7][(s:=y-j-1)%2]]*s)for i in R(H)for j in R(H)for x in R(i,H)for y in R(j,H)if all(w[j]+w[y]+d[i][b]+d[x][b]==4 for w in d[i:x]for b in R(j,y))for w in d[i+1:x]];return d

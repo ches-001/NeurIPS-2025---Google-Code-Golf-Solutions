@@ -1,1 +1,1 @@
-def p(d,n=27):H=len(d);R=range(H);d=[[[c:=d[i][j],1][c==0 and any(0<=a<H>b>=0 and d[a][b]==1 for a,b in[(i-1,j),(i+1,j),(i,j+1),(i,j-1)])]for j in R]for i in R];return p(d,n-1)if n else d
+p=lambda d,E=enumerate:[d:=[[[c,1][c<1 and 1 in r[j-(j>0):j+2]+[*C][i-(i>0):i+2]]for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]for _ in[0]*28][-1]

@@ -1,0 +1,1 @@
+p=lambda d:[(d:=[*zip(*d)],d:=[[r[(a:=B.index(1))+(j-a)%sum(B)]if sum(B:=[*map(bool,r)])>1 else c for j,c in enumerate(r)]for r in d])[1]for _ in[0]*2][1]

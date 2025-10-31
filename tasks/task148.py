@@ -1,0 +1,1 @@
+def p(d,E=enumerate):e,f=sorted([C.index(2)for C in zip(*d)if 2 in C]);return[[[4,c or 8*[sum(d[i-f+e])>9,any(r[:j])*any(r[j:])][i<f]][c<7]for j,c in E(r)]for i,r in E(d)]

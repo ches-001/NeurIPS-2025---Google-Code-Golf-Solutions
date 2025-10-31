@@ -1,1 +1,8 @@
-p=lambda d,R=range(10):[[[d[i][j],2][sum((D:=[*zip(*d)])[j])==2 or sum(w:=D[j])==7 and i>w.index(5) or sum(v:=D[j-1])==7 and i<=v.index(5)+1]for j in R]for i in R]
+def p(d,R=range(10)):
+ for j in R:
+  if d[-1][j]==2:
+   c=0
+   for i in R:
+    if d[~i][j+c]>4:c+=1;d[-i][j+c]=2
+    d[~i][j+c]=2
+ return d

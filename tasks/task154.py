@@ -1,0 +1,1 @@
+F=lambda r,j,t=1:(2 in r[j-3:j]and r[2*r.index(2,j-3)-j]==5)+(t and F(r[::-1],14-j,0));p=lambda d,E=enumerate:[[[c*(c!=5),5][F(r,j)+F(C,i)]for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

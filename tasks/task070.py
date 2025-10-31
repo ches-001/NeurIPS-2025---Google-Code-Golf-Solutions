@@ -1,1 +1,1 @@
-def p(d):a,b=17,0;[(a:=min(a,r.index(8)),b:=max(b,16-r[::-1].index(8)))for r in d if 8 in r];return[[[c,3][8 in r and a<=j<=b and c!=8]for j,c in enumerate(r)]for r in d]
+p=lambda d,t=7,E=enumerate:-t*d or p([[[c:=C[i],3,a:=[*r[j-(j>0):j+2],*C[i-(i>0):i+2]].count][a(8)+a(3)>1==c]for j,C in E(zip(*d))]for i,r in E(d)],t-1)

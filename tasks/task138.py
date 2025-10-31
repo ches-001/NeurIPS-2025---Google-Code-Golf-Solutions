@@ -1,0 +1,1 @@
+def p(d,E=enumerate):F=lambda a:[i for i,r in E(a)if all(r)];I,X=F(d);J,Y=F(zip(*d));d=[r[J:Y+1]for r in d[I:X+1]];return[d:=[[[c,r[0]][r[0]in r[j+1:]]for j,c in E(r)]for r in zip(*d[::-1])]for _ in d][3]

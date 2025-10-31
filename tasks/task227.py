@@ -1,1 +1,1 @@
-p=lambda d:[[(1-bool(a|b))*2 for a,b in zip(*r)]for r in zip(d[:4],d[4:])]
+p=lambda d:[[(a|b<1)*2 for a,b in zip(*r)]for r in zip(d[:4],d[4:])]

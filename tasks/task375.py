@@ -1,1 +1,3 @@
-E=enumerate;p=lambda d:[[c*(i!=j and i+j!=len(r)-1) for j,c in E(r)]for i,r in E(d)]
+def p(d,i=0):
+ for r in d:r[i]=d[-i-1][i]=0;i+=1
+ return d

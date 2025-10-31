@@ -1,1 +1,1 @@
-def p(d,R=range(10)):M={};[M.__setitem__(v,M.get(v,[])+[i,j])for i in R for j in R if(v:=d[i][j])];return[[max(M,key=lambda k:(R:=M[k][::2],C:=M[k][1::2],(min(R)-max(R)-2)*(min(C)-max(C)-2))[2])]*2]*2
+def p(d,E=enumerate):a=[0]*10;[a.__setitem__(c,r.count(c)*sum(t[j]==c for t in d))for _,r in E(d)for j,c in E(r)if c];return[[a.index(max(a))]*2]*2

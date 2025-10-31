@@ -1,0 +1,1 @@
+exec('def p(d):'+'d=[*zip(*d)];d=[[[c,0][len({*r})>2 and 0 in r and c==d[i-1][r.index(0)]]for c in r]for i,r in enumerate(d)];'*2+'return d')

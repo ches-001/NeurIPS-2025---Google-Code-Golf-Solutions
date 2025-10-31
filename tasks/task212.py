@@ -1,0 +1,1 @@
+p=lambda d:[(d:=[[[[C[i],2][i<(I:=C.index(5))and 2 in C[:i]],1][1 in C[i:I]]for C in zip(*d[::-1])]for i in range(10)])for _ in[0]*2][1]

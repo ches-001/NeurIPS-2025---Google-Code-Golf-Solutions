@@ -1,1 +1,1 @@
-p=lambda d:[[c+2*((1-c)*sum(r[j-1:j+2])==2)for j,c in enumerate(r)]for r in d]
+p=lambda d:[[c|2*(sum(r[j-1:j+2])>1)for j,c in enumerate(r)]for r in d]

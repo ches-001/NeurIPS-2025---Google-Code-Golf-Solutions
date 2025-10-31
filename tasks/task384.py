@@ -1,1 +1,1 @@
-def p(d,R=range(18)):C=[*zip(*d)];return[[d[i//2][j//2]for j in R if any(C[j//2])]for i in R if any(d[i//2])]
+p=lambda d,R=range(18):[[d[i//2][j//2]for j in R if any([*zip(*d)][j//2])]for i in R if any(d[i//2])]

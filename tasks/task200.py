@@ -1,0 +1,1 @@
+p=lambda d,R=range(10):[[(j>=(J:=d[9].index(M:=max(d[9]))))*[5*(i in[0,9]and(j-J-[3,1][i<1])%4<1),M][j%2==J%2]for j in R]for i in R]

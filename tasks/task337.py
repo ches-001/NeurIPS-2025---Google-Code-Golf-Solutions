@@ -1,1 +1,1 @@
-p=lambda d:[[[c,13-c][c in[8,5]]for c in r]for r in d]
+p=lambda d:[[c^13*(c in[8,5])for c in r]for r in d]

@@ -17,21 +17,14 @@
 import copy
 import importlib.util
 import json
+import numpy
 import os
+import re
 import sys
-
+import tqdm
+import traceback
 import matplotlib.pyplot as plt
 import numpy as np
-
-# idx = 0
-# fig, axs = plt.subplots(1, 3, figsize=(10,35))
-# plot(puzzles[idx]["input"],axs[0])
-# plot(puzzles[idx]["output"], ax=axs[1])
-# plot(p(deepcopy(puzzles[idx]["input"])), ax=axs[2])
-# axs[0].set_title("input")
-# axs[1].set_title("ground truth")
-# axs[2].set_title("solution")
-
 
 code_golf_dir = "dataset/google-code-golf-2025/"
 libraries = ["collections", "itertools", "math", "operator", "re", "string",
@@ -200,7 +193,7 @@ def show_examples(examples, bgcolor=(255, 255, 255)):
 
 
 def verify_program(task_num, examples):
-  task_name, task_path = "task_with_imports", f"tasks/task{task_num:03d}.py"
+  task_name, task_path = "task_with_imports", f"tasks/task{str(task_num).zfill(3)}.py"
   spec = importlib.util.spec_from_file_location(task_name, task_path)
   if spec is None:
     print("Error: Unable to import task.py.")
@@ -214,23 +207,35 @@ def verify_program(task_num, examples):
   if not callable(program):
     print("Error: Function p() in task.py is not callable.")
     return
-  def verify(label,example_subset):
-    right, wrong, expected = 0, 0, None
-    for i, example in enumerate(example_subset):
+  print()
+  def verify(example_subset, sub_type):
+    right, wrong, expected, error = 0, 0, None, ""
+    for idx, example in tqdm.tqdm(enumerate(example_subset)):
       example_copy = copy.deepcopy(example)
       try:
-        if list(map(list,program(example_copy["input"]))) == example_copy["output"]:
+        result = program(example_copy["input"])
+        result = json.dumps(result)
+        result = result.replace("true", "1").replace("false", "0")
+        unsafe_chars = re.compile(r"[^0-9,\[\]\s\.]")
+        if unsafe_chars.search(result):
+          raise ValueError(f"Invalid output from user code: {result[:500]}")
+        result = json.loads(result)
+        user_output = np.array(result)
+        label_output = np.array(example_copy["output"])
+        if numpy.array_equal(user_output, label_output):
           right += 1
         else:
+          print(f"{sub_type} idx: {idx} Failed")
           expected = copy.deepcopy(example)
-          print(f"Failed sample {label} {i}")
           wrong += 1
-      except Exception as e:
-        print(f"Error at {label} {i} {type(e)}: ",e)
+      except:
+        error = traceback.format_exc()
+        print(f"{sub_type} idx: {idx} Failed with exception: {error}")
         wrong += 1
+    if error: raise Exception(error)
     return right, wrong, expected
-  arc_agi_right, arc_agi_wrong, arc_agi_expected = verify("arc-agi",examples["train"] + examples["test"])
-  arc_gen_right, arc_gen_wrong, arc_gen_expected = verify("arc-gen",examples["arc-gen"])
+  arc_agi_right, arc_agi_wrong, arc_agi_expected = verify(examples["train"] + examples["test"], sub_type="arc-agi")
+  arc_gen_right, arc_gen_wrong, arc_gen_expected = verify(examples["arc-gen"], sub_type="arc-gen")
   print(f"Results on ARC-AGI examples: {arc_agi_right} pass, {arc_agi_wrong} fail")
   print(f"Results on ARC-GEN examples: {arc_gen_right} pass, {arc_gen_wrong} fail")
   print()

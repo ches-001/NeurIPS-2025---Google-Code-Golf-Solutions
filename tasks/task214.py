@@ -1,1 +1,1 @@
-def p(d,R=range):return[[[[d[2-j%4][i],d[2-i][2-j%4]][j//4==2],d[i][j]][j//4==0]if j%4<3 else 5 for j in R(11)]for i in R(3)]
+def p(d,R=range):return[[[[d[2-j%4][i],d[2-i][2-j%4]][j//4==2],d[i][j]][j//4<1]if j%4<3 else 5 for j in R(11)]for i in R(3)]

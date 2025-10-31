@@ -1,0 +1,1 @@
+p=lambda d,m=0:D if(D:=[([0]*(i//(t:=m%4+1)*((k:=m//4)%3)*(k//3))+d[:t][i%t])[:10]for i in range(10)])[:len(d)]==d else p(d,m+1)

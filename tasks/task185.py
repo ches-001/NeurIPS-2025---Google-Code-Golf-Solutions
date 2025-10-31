@@ -1,0 +1,1 @@
+def p(g):s=g[0].index(m:=max(g[0]))+1;y,x=[min(i for i,r in enumerate(e)if{*r}-{0,m})for e in(g,zip(*g))];return[[(v:=g[y+r][x+c])*(v==g[y+r][x+c]==g[y+r+s][x+c]==g[y+r][x+c+s]==g[y+r+s][x+c+s]!=m)for c in(0,s,s+s)]for r in(0,s,s+s)]

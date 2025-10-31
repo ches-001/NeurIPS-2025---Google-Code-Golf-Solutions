@@ -1,1 +1,1 @@
-def p(d,R=range,L=len):N=L(d);C=[*zip(*d)];F=N//2;f=F+1;return[[[d[f*(i//f)+a][f*(j//f)+b]for b in R(F)]for a in R(F)]for i in R(N) for j in R(N)if L({*d[i]})==L({*C[j]})==3][0]
+def p(d):A=sum(d,[]);K=A.index(min(A,key=A.count));H=len(d);n=1+H//2;I=K//H//n*n;J=K%H//n*n;return[r[J:J+n-1]for r in d[I:I+n-1]]

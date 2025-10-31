@@ -1,0 +1,1 @@
+def p(d):L=len(r:=d[0]);return[r[:1]*i+r[:L-i]for i in range(L//2)]

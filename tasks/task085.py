@@ -1,5 +1,1 @@
-def p(d,i=0):
- while i<len(d):
-  if any(d[i]):r=d[i+1];s=r.index(max(r));r[s+1::2]=[0]*len(r[s+1::2]);i+=3
-  else:i+=1
- return d
+p=lambda d:[((t:=0)or[(t:=t^v)&v for v in b],b)[a!=c]for a,b,c in zip([0]+d,d,d[1:]+[0])]

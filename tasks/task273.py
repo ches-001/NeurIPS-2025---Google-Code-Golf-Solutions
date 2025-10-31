@@ -1,0 +1,1 @@
+def p(d,R=range):[exec('for a in d[i+1:x]:a[j+1:y]=[2]*(y-j-1)')for i in R(10)for j in R(10)for x in R(i+1,10)for y in R(j+1,10)if d[i][j]+d[i][y]+d[x][y]>9];return d

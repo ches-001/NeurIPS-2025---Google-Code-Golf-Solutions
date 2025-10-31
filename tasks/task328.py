@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[(D:=sorted([sum(T:=[abs(x-i),abs(y-j)]),v*(~max(T)&1)]for x,s in E(d)for y,v in E(s)if v))and(D[0][0]<D[1][0])*D[0][1]for j,_ in E(r)]for i,r in E(d)]

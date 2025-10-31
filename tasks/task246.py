@@ -1,0 +1,1 @@
+def p(d,E=enumerate,D=divmod):W=len(d[0]);A=sum(d,[]).index;I,J=D(A(2),W);X,Y=D(A(3),W);return[[c or 8*((i==I)*(min(J,Y)<=j<=max(J,Y))|(j==Y)*(min(I,X)<=i<=max(I,X)))for j,c in E(r)]for i,r in E(d)]

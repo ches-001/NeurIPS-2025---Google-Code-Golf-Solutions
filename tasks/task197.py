@@ -1,0 +1,1 @@
+p=lambda d:[[r[d[1].index(C)]for C in d[1]]for r in d]

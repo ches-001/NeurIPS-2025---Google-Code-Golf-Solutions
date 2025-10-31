@@ -17,8 +17,11 @@
 import copy
 import importlib.util
 import json
+import numpy
 import os
+import re
 import sys
+import traceback
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -207,17 +210,28 @@ def verify_program(task_num, examples):
     return
   print()
   def verify(example_subset):
-    right, wrong, expected = 0, 0, None
+    right, wrong, expected, error = 0, 0, None, ""
     for example in example_subset:
       example_copy = copy.deepcopy(example)
       try:
-        if program(example_copy["input"]) == example_copy["output"]:
+        result = program(example_copy["input"])
+        result = json.dumps(result)
+        result = result.replace("true", "1").replace("false", "0")
+        unsafe_chars = re.compile(r"[^0-9,\[\]\s\.]")
+        if unsafe_chars.search(result):
+          raise ValueError(f"Invalid output from user code: {result[:500]}")
+        result = json.loads(result)
+        user_output = np.array(result)
+        label_output = np.array(example_copy["output"])
+        if numpy.array_equal(user_output, label_output):
           right += 1
         else:
           expected = copy.deepcopy(example)
           wrong += 1
       except:
+        error = traceback.format_exc()
         wrong += 1
+    if error: print(f"Error: {error}")
     return right, wrong, expected
   arc_agi_right, arc_agi_wrong, arc_agi_expected = verify(examples["train"] + examples["test"])
   arc_gen_right, arc_gen_wrong, arc_gen_expected = verify(examples["arc-gen"])

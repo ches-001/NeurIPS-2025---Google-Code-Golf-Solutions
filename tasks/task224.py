@@ -1,0 +1,1 @@
+def p(d,E=enumerate):I,J=zip(*[(i,j)for i,r in E(d)for j,c in E(r)if c==5]);A,B=min(I),max(I);Y,Z=min(J),max(J);m=max({*sum(d,[])}-{5});return[[[c,m][i in[A+1,B-1]and Y<j<Z or j in[Y+1,Z-1]and A<i<B]for j,c in E(r)]for i,r in E(d)]

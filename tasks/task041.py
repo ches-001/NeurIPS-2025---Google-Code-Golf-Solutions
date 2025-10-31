@@ -1,6 +1,1 @@
-def p(d,q=0):
- for r in d:
-  for j,c in enumerate(r):
-   if c:q=(not q)*c
-   else:r[j]=q
- return d
+p=lambda j,a=0:[[c and(a:=(a<1)*c)or c or a for c in r]for r in j]

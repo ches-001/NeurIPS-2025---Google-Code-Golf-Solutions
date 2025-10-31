@@ -1,0 +1,1 @@
+def p(d):U=max({*sum(d,[])}-{V:=[c for r in d for a,c,e in zip(r,r[1:],r[2:])if c>a+e<1][0]});S=len(D:=[[c for c,C in zip(r,zip(*d))if U in C]for r in d if U in r])//3;R=0,1,2;return[[V*(D[i*S][j*S]==U)for j in R]for i in R]

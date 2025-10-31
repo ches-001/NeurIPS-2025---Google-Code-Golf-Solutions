@@ -1,0 +1,1 @@
+p=lambda d:[d:=[[[c or[c,8][5 in r[:j]and 5 in r[j:]],8][r.count(5)==1<j>r.index(5)<5]for j,c in enumerate(r)]for r in zip(*d[::-1])]for _ in d][3]

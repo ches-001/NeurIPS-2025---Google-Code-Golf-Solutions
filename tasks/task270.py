@@ -1,0 +1,1 @@
+F=lambda r,j,a,b:0<j<14 and(r[j-1]==a and b in r[j:]or r[j+1]==a and b in r[:j]);p=lambda d,E=enumerate:[[[[c-c*(c in[3,7]),7][F(r,j,1,7)+F(C,i,1,7)],3][F(r,j,2,3)+F(C,i,2,3)]for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

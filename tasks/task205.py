@@ -1,0 +1,1 @@
+def p(d):W=len(d[0]);R=range(len(d)*W);D=max((len(D)*len(D[0]),D)for m in R for k in R if len({*str(D:=[r[k%W:k%W+m%W]for r in d][k//W:k//W+m//W])})==6)[1];A=sum(D,[]);m=min(A,key=A.count);return[[[c,m][m in r+[*C]]for c,C in zip(r,zip(*D))]for r in D]

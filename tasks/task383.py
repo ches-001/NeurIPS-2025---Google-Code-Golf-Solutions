@@ -1,0 +1,1 @@
+def p(d):D=d;[[D:=[*zip(*D)],d:=[[[c,[a:=next(filter(bool,R),1),max({*R}-{a})][c<1]][R.count(a)<4>len({*R})>2]for c in r]for r,R in zip(zip(*d),D)]]for _ in[0]*2];return d

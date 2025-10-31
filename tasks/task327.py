@@ -1,0 +1,1 @@
+p=lambda d,L=[0]*6:[(L:=[*map(max,[0]+L,r+[0]*6)][:6])for r in d+3*[[]]]

@@ -1,1 +1,1 @@
-p=lambda d:[[[c,2][sum(r)==0 or sum(C)==0]for c,C in zip(r,zip(*d))]for r in d]
+p=lambda d:[[[c,2][sum(r)<1 or sum(C)<1]for c,C in zip(r,zip(*d))]for r in d]

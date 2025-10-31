@@ -1,0 +1,1 @@
+p=lambda d,t=64:p([[[[[c,9][t<2==c],8][t<14>c==1<a>=8],2][c>8>a==2]for a,c in zip((2,)+r,r)]for r in zip(*d[::-1])],t-1)if t else d

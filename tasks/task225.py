@@ -1,0 +1,1 @@
+def p(d,R=range,a=-1,t=[-2,2]):[exec('d[x][y]=d[i+2-2*w-1][j+2-2*q-1]')for k in R(36)if d[i:=k//6][j:=k%6]>0<=(a:=a+1)<4 for u in R(4)if 0<=(x:=i+t[w:=a//2]-w+u//2)<6>(y:=j+t[q:=a%2]-q+u%2)>=0];return d

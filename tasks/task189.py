@@ -1,0 +1,1 @@
+def p(d,R=range(6)):A=1-d.index([8]*9)//6;B=1-[*zip(*d)].index((8,)*9)//6;return[[d[(1-A)*7+(i//3)][(1-B)*7+(j//3)]*bool(d[A*3+i][B*3+j])for j in R]for i in R]

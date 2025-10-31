@@ -1,1 +1,1 @@
-p=lambda d:[[(not a^b)*3 for a,b in zip(*e)]for e in zip(d[:4],d[5:])]
+p=lambda d:[[(a^b<1)*3 for a,b in zip(*e)]for e in zip(d[:4],d[5:])]

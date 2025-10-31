@@ -1,0 +1,1 @@
+p=lambda d,R=range(12):max(A:=[D for i in R for j in R if sum([*map(any,D:=[r[j:j+3]for r in d[i:i+3]]),*map(any,zip(*D))])>5],key=A.count)

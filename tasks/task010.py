@@ -1,6 +1,1 @@
-def p(d):
- m={}
- for r in d:
-  for c in range(9):
-   if r[c]:m[c]=m.get(c,len(m)+1);r[c]=m[c]
- return d
+p=lambda d:(a:={})or[[a.setdefault(j,len(a)+1)if c else c for j,c in enumerate(r)]for r in d]

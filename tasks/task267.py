@@ -1,1 +1,1 @@
-p=lambda d,R=range(7):[[[(a:=d[6][0])*bool(c:=d[i][j]),0][c==a]for j in R]for i in R]
+p=lambda d:[[(a:=d[6][0])*(c>0)*(c!=a)for c in r]for r in d]

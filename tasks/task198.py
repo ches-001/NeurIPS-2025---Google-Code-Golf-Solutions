@@ -1,0 +1,1 @@
+def p(d):m=max(d[1]);return[d:=[[[c*(c!=3)or 3+(r.count(m)>9),4][a==4>c==3]for a,c in zip((0,)+r,r)]for r in zip(*d[::-1])]for _ in d*2][23]

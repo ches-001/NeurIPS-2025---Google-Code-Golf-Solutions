@@ -1,0 +1,1 @@
+p=lambda d:[(d:=[*zip(*d[::-1])],d:=[(a:=0,[[c,8][d[I:=max(0,min(len(d)-1,i+(a:=a+[C[-1]==2,-1][C[0]==2])))][0]==sum(d[I])==8]for c,C in zip(r,zip(*d))])[1]for i,r in enumerate(d)])[1]for _ in d][3]

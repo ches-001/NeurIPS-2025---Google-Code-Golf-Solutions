@@ -1,0 +1,1 @@
+p=lambda d,t=1,R=range(9,-1,-1):-t*d or p([[[[c:=d[i][j],0][c==5-5*t],C:=max({*(A:=sum(d,[]))}-{5}),K:=A.index(5),J:=K%10][d[I:=K//10][J-1]==C>-9<i-I+1==j-J-d[I].count(5)]for j in R]for i in R],t-1)

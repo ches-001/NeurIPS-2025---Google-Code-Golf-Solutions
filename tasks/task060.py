@@ -1,1 +1,1 @@
-p=lambda d:[[(r[[0,-1][j>5]]if j!=5 else 5)if any(r)else 0 for j,c in enumerate(r)]for r in d]
+p=lambda d:[r[:1]*5+[(r[0]>0)*5]+r[-1:]*5 for r in d]

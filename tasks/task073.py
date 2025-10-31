@@ -1,1 +1,1 @@
-p=lambda d:[[[[c,1][1 in C and i==4],0][c==1]for c,C in zip(d[i],zip(*d))]for i in range(5)]
+def p(d):d[4]=[a or b for a,b in zip(*d[2::2])];d[2]=[0]*5;return d

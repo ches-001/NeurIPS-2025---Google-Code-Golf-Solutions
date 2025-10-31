@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[v]for i,r in E(d)for j,c in E(r)if c<(v:=d[i-1][j])==r[j-1]>0]

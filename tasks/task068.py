@@ -1,1 +1,1 @@
-def p(d,R=range):C=[];O=R(-1,2);[C.extend([d[i][j],(i,j)])for i in R(10)for j in R(10)];I,J=C[C.index(min({*C[::2]},key=C.count))+1];V=[(I+i,J+j)for i in O for j in O];return[[[2,d[i][j]][(i,j)==(I,J)]if(i,j)in V else 0 for j in R(10)]for i in R(10)]
+def p(d,R=range(10)):A=sum(d,[]);m=min(A,key=A.count);return[[[2,m][d[i][j]==m]*any(m in r[j-(j>0):j+2]for r in d[i-(i>0):i+2])for j in R]for i in R]

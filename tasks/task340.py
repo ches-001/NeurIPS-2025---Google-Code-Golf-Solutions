@@ -1,0 +1,1 @@
+p=lambda d:[(d:=[[[[c*(c in[a:=r[0],r[-1],d[j][0],d[j][-1]]),0][c==a>0<j],a][a in r[1:]and j==1<=a]for j,c in enumerate(r)]for r in zip(*d[::-1])])for i in d][3]

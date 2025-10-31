@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[(d:=([d:=[*zip(*d[::-1])]]+[[[[C,c][1<i-a==b-j>1]for b,C in E(R)]for a,R in E(d)]for i,r in E(d[1:],1)for j,c in E(r[:-1])if c&d[i-1][j]&r[j+1]])[-1])for _ in d][3]

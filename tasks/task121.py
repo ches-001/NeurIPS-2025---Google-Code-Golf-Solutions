@@ -1,1 +1,1 @@
-R=range(13);p=lambda d:[[[[c,max(d[i-1][j-1:j+2])][c==8]for c in r[j-1:j+2]]for r in d[i-1:i+2]]for i in R for j in R if d[i][j]==8][0]
+def p(d):I,J=divmod(sum(d,[]).index(8),13);return[[[c,max(d[I-1][J-1:J+2])][c==8]for c in r[J-1:J+2]]for r in d[I-1:I+2]]

@@ -1,16 +1,6 @@
-def p(d):
- R=range;M=R(9);Q=[];V=[];O=[-1,1];F=lambda i:max(0,min(i,8))
- for r in M:
-  for c in M:
-   if v:=d[r][c]:
-    V+=[(r,c)]
-    if v!=2:C=v
-    else:Q+=[(r,c)]
- for i in R(2):
-  for j in R(2):
-   r,c=V[0];a=r+i;b=c+j
-   if (a,b)in Q:
-    while 0<=a<9 and 0<=b<9:
-      for x in R(-1,2):d[F(a+x)][F(b)]=C;d[F(a)][F(b+x)]=C
-      a+=O[i];b+=O[j]
+def p(d,R=range(9)):
+ V=[(i,j)for i in R for j in R if d[i][j]];A,B=zip(*V);W=[(i-A[0],j-B[0])for i,j in V if d[i][j]==2];m=max({*sum(d,[])}-{2})
+ for a,b in W:
+  for i,j in V:
+   while 0<=(i:=i+2*a-1)<9>(j:=j+2*b-1)>=0:d[i][j]=m
  return d

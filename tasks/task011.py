@@ -1,1 +1,1 @@
-def p(d):L=range;R=L(11);M=L(3);G=[(r//4,c//4)for r in R for c in R if d[r][c]==8];P=[3,7];O=[[(5 if c in P or r in P else 0)for c in R]for r in R];g=[(i,j)for i in M for j in M if(i,j)not in G][0];[O[4*i+r].__setitem__(4*j+c,d[4*g[0]+i][4*g[1]+j])for i in M for j in M for r in M for c in M];return O
+p=lambda d,R=range:(lambda c,e:[[5 if 3 in[x%4,y%4]else d[c*4+x//4][e*4+y//4]for y in R(11)]for x in R(11)])(*next((c,e)for c in R(3)for e in R(3)if sum(d[c*4+k//3][e*4+k%3]<1 for k in R(9))==5))

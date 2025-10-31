@@ -1,1 +1,1 @@
-def p(d):C=[j for r in d for j,c in enumerate(r) if c>0];return[r[min(C):max(C)+1]*2 for r in d if sum(r)>0]
+p=lambda d,F=filter:[*zip(*[*F(any,zip(*F(any,d)))]*2)]

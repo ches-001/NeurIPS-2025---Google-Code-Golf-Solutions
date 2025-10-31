@@ -1,1 +1,1 @@
-def p(d,R=range(10)):F=lambda i,j,V:0<=i<10>j>=0 and d[i][j]and(i,j)not in V and not V.add((i,j))and[F(i+a,j+b,V)for a,b in[(-1,0),(1,0),(0,-1),(0,1)]]and len(V);return[[[0,0,3,2,1][F(i,j,set())]for j in R]for i in R]
+p=lambda d,t=27,l=0:-t*d or p([[[[(h:=a>0)*b|a,h<<(l:=l+1)][a%2],h*(5-a.bit_count())][t<5]*(t>3)or a for a,b in zip(r,[*r[1:],0])]for r in zip(*d[::-1])],t-1)

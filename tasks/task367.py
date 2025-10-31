@@ -1,0 +1,1 @@
+p=lambda d,t=19,E=enumerate:-t*d or p([*zip(*[[c or[c,4,x:=r[j-(j>0)]][x==4 or j>1>0<=i<len(d)-2>0<x+d[i+1][j]==10>d[i+2][j-1]+d[i+1][j-2]<1]for j,c in E(r)]for i,r in E(d)][::-1])],t-1)

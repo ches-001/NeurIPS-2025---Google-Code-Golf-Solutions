@@ -1,1 +1,1 @@
-p=lambda d,S=sorted:S(map(S,d),key=lambda r:-r.count(0))
+p=lambda d,S=sorted:S(S(r)for r in d)

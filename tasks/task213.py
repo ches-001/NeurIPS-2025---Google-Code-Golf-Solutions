@@ -1,0 +1,1 @@
+def p(d):N=len({*sum(d,[])})-2;b=any(map(all,d));d=[[max(w)]*N for r in[zip(*d),d][b]if any(w:={*r}-{5})];return[[*zip(*d)],d][b]

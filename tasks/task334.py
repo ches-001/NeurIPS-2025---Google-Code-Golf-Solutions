@@ -1,1 +1,1 @@
-p=lambda d,R=[0,1,2]:[[[0,5][(j==[1,2][(C:=max(sum(d,[])))==3])|(i==[1,0,2][C-1])]for j in R]for i in R]
+p=lambda d,R=[0,1,2]:[[5*((j==1+((C:=max(sum(d,[])))==3))|(i==[1,0,2][C-1]))for j in R]for i in R]

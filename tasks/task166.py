@@ -1,1 +1,1 @@
-p=lambda d:[[c or 2*(c==0)*any(r)*any(C)for c,C in zip(r,zip(*d))]for r in d]
+p=lambda d:[[c or 2*(c<1)*any(r)*any(C)for c,C in zip(r,zip(*d))]for r in d]

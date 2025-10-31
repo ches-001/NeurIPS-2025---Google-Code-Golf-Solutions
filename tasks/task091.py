@@ -1,1 +1,1 @@
-def p(d,E=enumerate):V=[(i,j)for i,r in E(d)for j,c in E(r)if c==5];return[r[V[0][1]:V[-1][1]+1]for r in d[V[0][0]-1:V[-1][0]+2]]
+def p(d,E=enumerate):A,*_,Z=[(i,j)for i,r in E(d)for j,c in E(r)if c==5];return[r[A[1]:Z[1]+1]for r in d[A[0]-1:Z[0]+2]]

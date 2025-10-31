@@ -1,0 +1,1 @@
+def p(d,R=range):[exec('for a in d[i+1:x]:a[j+1:y]=[5+(s:=y-j-1)]*s')for i in R(12)for j in R(12)for x in R(i+1,12)for y in R(j+1,12)if all(d[i][b]+d[x][b]+d[a][j]+d[a][y]==20 for b in R(j,y)for a in R(i,x))];return d

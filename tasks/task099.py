@@ -1,0 +1,1 @@
+p=lambda d,t=15:-t*d or p([*zip(*[[[[c,a][a>1>c<t>7],[c,max(q)][q.count(1)==4>0<e]][t==7]for a,c,e in zip([0,*r],r,q)]for r,q in zip(d,[*d[1:],*[[0]*10]])][::-1])],t-1)

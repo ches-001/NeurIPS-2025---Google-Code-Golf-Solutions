@@ -1,0 +1,1 @@
+p=lambda d:[[c+2*(c>0)*(j%3<1)for j,c in enumerate(r)]for r in d]

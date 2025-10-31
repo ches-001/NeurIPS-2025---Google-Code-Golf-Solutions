@@ -1,1 +1,1 @@
-p=lambda d:[[2+2*(r[1]==5)+(r[2]==5)for _ in r]for r in d]
+p=lambda d:[[[2,4,3][r.index(5)]]*3 for r in d]

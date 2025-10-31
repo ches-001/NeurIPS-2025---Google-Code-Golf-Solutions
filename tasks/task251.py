@@ -1,0 +1,1 @@
+p=lambda d,t=52:p([[[[[c,0][t<2<c>7],1][t<8>c<1],8][a>7>c<1]for a,c in zip((8,)+r,r)]for r in zip(*d[::-1])],t-1)if t else d

@@ -1,0 +1,1 @@
+p=lambda d,t=3:-t*d or p([*zip(*[[[[C[i],(f:=[*filter(bool,C),0,0])[0]][(8 in r)&(sum(r)==8)&any(C[:i])],f[8 not in r]][(sum(A:=sum(d[i+1:],type(r)()))==8)&(8 in A)]for C in zip(*d)]for i,r in enumerate(d)][::-1])],t-1)

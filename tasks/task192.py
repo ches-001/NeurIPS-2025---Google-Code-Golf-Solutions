@@ -1,0 +1,1 @@
+def p(d,E=enumerate):A=sum(d,[]);V=max({*A}-{0},key=A.count);o=[0];return[[V*(c>0)*any((o+r+o)[j:j+3:2])*any((o+[*C]+o)[i:i+3:2])for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]

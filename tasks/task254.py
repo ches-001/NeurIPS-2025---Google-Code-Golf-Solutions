@@ -1,1 +1,1 @@
-def p(d,R=range(9)):D=[*zip(*d)];S=sorted(D,key=lambda x:x.count(5))[D.count((0,)*9):];return[[[2*((c:=d[i][j])==5)*(D[j]==S[0]),1*(c==5)][D[j]==S[-1]]for j in R]for i in R]
+def p(d):a,*_,b=sorted(filter(any,D:=[*zip(*d)]),key=sum);return[[c and[C==b,2][C==a]for c,C in zip(r,D)]for r in d]

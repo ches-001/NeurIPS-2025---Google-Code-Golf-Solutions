@@ -1,11 +1,5 @@
-def p(d,E=enumerate,S=sorted,R=range,L=len):
- M=L(d);N=L(d[0]);A=R(M);B=R(N);G=[(r,c,d[r][c])for r in A for c in B if d[r][c]];P=lambda i,j:(min(i,j),max(i,j))
- if M < N:
-  G=S(G,key=lambda x:x[1]);a,b=P(G[0][1],G[1][1])
-  for w,c in E(R(a,N,b-a)):
-   for r in A:d[r][c]=G[w%2][2]
- else:
-  G=S(G,key=lambda x:x[0]);a,b=P(G[0][0],G[1][0])
-  for w,r in E(R(a,M,b-a)):
-   for c in B:d[r][c]=G[w%2][2]
+def p(d,E=enumerate,s=1):
+ for _ in[0]*2:
+  d=[*zip(*d)]
+  if any(d[0]+d[-1])*s:(J,C),(Y,V)=sorted([(j,c)for r in d for j,c in E(r)if c]);q=(Y-J)*2;d=[[[c,[[c,V][(j-Y)%q<1],C][(j-J)%q<1]][j>=J]for j,c in E(r)]for r in d];s=0
  return d

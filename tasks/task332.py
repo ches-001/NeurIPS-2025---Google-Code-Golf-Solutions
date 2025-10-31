@@ -1,0 +1,1 @@
+p=lambda d:[[[c,3][c+(len(r)-1-j)%2==5]for j,c in enumerate(r)]for r in d]

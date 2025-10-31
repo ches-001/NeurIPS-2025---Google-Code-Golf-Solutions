@@ -1,0 +1,1 @@
+def p(d,R=range(1,9),C=5):[exec('d[i][j]=C')for i in R if(C:=C+(sum(d[i])<1))for j in R if d[i-1][j]+d[i+1][j]+d[i][j-1]+d[i][j+1]>15];S=sum(d,[]);M=dict(zip(sorted([c for c in{*S}if c>4],key=S.count),(1,2)));return[[M.get(c,c)for c in r]for r in d]

@@ -1,1 +1,1 @@
-E=enumerate;p=lambda d:[[(1 if 1 in r else 3 if 3 in r else 2 if c<1 and j in{b for e in d for b,u in E(e)if u==2}else c)for j,c in E(r)]for r in d]
+p=lambda d:[[[[2*(2 in C),3][3 in r],1][1 in r]for C in zip(*d)]for r in d]

@@ -1,6 +1,6 @@
-def p(d,E=enumerate):
- I,J=[(i,j)for i,r in E(d[1:-1],1)for j,c in E(r[1:-1],1)if c if str(d).count(str(c))==5 if all(d[a][b]==c for a in[i-1,i+1]for b in[j-1,j+1])][0]
- for i,r in E(d):
-  for j,c in E(r):
-   if d[I][J]!=c>0:a=2*I-i;b=2*J-j;d[a][j]=d[i][b]=d[a][b]=d[i][j]
- return d
+def p(m,E=enumerate):
+ f=sum(m,[]);Y,X=divmod(f.index(*[c for c in{*f}if"2, 1, 2"in str([r.count(c)for r in m])!=f.count(c)<6]),len(m))
+ for y,r in E(m):
+  for x,v in E(r):
+   if v:m[a:=2*Y+2-y][b:=2*X+2-x]=m[y][b]=m[a][x]=v
+ return m

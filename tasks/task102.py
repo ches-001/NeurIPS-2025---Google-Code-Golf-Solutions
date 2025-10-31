@@ -1,0 +1,1 @@
+def p(d,R=range(12)):[exec('for r in d[i+1:i+h-1]:r[j+1:j+h-1]=[2]*(h-2)')for i in R for j in R for h in R if sum(sum(D:=[r[j:j+h]for r in d[i:i+h]],[]))==20*h-20 if sum([*D[0]+D[-1],*(W:=[*zip(*D)])[0]+W[-1]])>19*h];return d

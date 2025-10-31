@@ -1,0 +1,1 @@
+def p(g):e=enumerate;y,x=map(min,zip(*((y,x)for y,r in e(g)for x,v in e(r)if~2&v)));R=range(n:=max(r.count(2)for r in g)-2);return[B:=[2]*(n+2),*[[2,*(g[y+i*3//n][x+j*3//n]for j in R),2]for i in R],B]

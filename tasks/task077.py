@@ -1,0 +1,1 @@
+p=lambda d,t=7,E=enumerate:-t*d or p([[[c:=C[i],[4,c,a:=[*r[j-(j>0):j+2],*C[i-(i>0):i+2]].count][c in[2,4]]][a(2)+a(4)>1<=c]for j,C in E(zip(*d))]for i,r in E(d)],t-1)

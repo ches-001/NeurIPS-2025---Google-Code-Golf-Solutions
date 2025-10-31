@@ -1,1 +1,1 @@
-E=enumerate;p=lambda d:[[[max(d[7]),max(d[2])][i<5]if i in[0,2,7,9]or j in[0,9]else c for j,c in E(r)]for i,r in E(d)]
+E=enumerate;p=lambda d:[[[c,[max(d[7]),max(d[2])][i<5]][i in[0,2,7,9]or j%9<1] for j,c in E(r)]for i,r in E(d)]

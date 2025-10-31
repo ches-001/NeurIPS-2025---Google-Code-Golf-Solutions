@@ -1,11 +1,1 @@
-def p(d):
- R=range(1,len(d)-1);O=[]
- for r in R:
-  for c in R:
-   if not d[r][c]:d[r][c]=4
- while O!=d:
-  O=[i[:]for i in d]
-  for r in R:
-   for c in R:
-    if d[r][c]==4 and not(d[r-1][c]and d[r+1][c]and d[r][c-1]and d[r][c+1]):d[r][c]=0
- return d
+p=lambda d,t=100:p([[[[[c,0][t<2<c>7],4][t<8>c<1],8][a>7>c<1]for a,c in zip((8,)+r,r)]for r in zip(*d[::-1])],t-1)if t else d

@@ -1,1 +1,1 @@
-p=lambda d:[r+r for r in d]
+p=lambda d:[r*2 for r in d]

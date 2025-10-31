@@ -1,1 +1,1 @@
-R=range(9);p=lambda d:[[d[r//3][c//3]and d[r%3][c%3]for c in R]for r in R]
+p=lambda d:[[c&C for c in r for C in R]for r in d for R in d]

@@ -1,1 +1,1 @@
-def p(d):E=enumerate;a,b=zip(*[(i,j)for i,r in E(d)for j,c in E(r)if c]);return[c[min(b):max(b)+1]for c in d[min(a):max(a)+1]]
+p=lambda d,F=filter:[*zip(*F(any,zip(*F(any,d))))]

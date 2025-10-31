@@ -1,1 +1,5 @@
-def p(d,E=enumerate):(I,J),(X,Y)=[(i,j)for i,r in E(d)for j,c in E(r)if c];return[[c or 4*((2 in r or 8 in C)*(min(I,X)<=i<=max(I,X)and min(J,Y)<=j<=max(J,Y)))for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]
+def p(d,R=range):
+ F=lambda c:next((i,r.index(c))for(i,r)in enumerate(d)if c in r);I,J=F(8);X,Y=F(2)
+ for a in[R(X,I),R(I+1,X+1)][I<X]:d[a][J]=4
+ for a in[R(Y+1,J),R(J,Y)][J<Y]:d[X][a]=4
+ return d

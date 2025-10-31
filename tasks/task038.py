@@ -1,1 +1,1 @@
-R=range(9);p=lambda d:[([1 for r in R for c in R if d[r][c]==1 and((r<8 and 1==d[r+1][c])or(r>0 and 1==d[r-1][c]))][::4]+[0]*5)[:5]]
+R=range(8);p=lambda d:[([1]*sum(d[i][j]*d[i+1][j]*d[i][j+1]*d[i+1][j+1]&1 for j in R for i in R)+[0]*5)[:5]]

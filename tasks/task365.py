@@ -1,4 +1,1 @@
-def F(d,O):
- for a,b in O:O+=[(x,y)for x,y in[(a+1,b),(a-1,b),(a,b+1),(a,b-1)]if 0<=x<10>y>=0 if d[x][y]if(x,y)not in O]
- A,B=zip(*O);return[r[min(B):max(B)+1]for r in d[min(A):max(A)+1]]
-p=lambda d,R=range(10):max([F(d,[(i,j)])for i in R for j in R if d[i][j]],key=lambda w:str(w).count('2'))
+p=lambda d,R=range(10):max([D for i in R for j in R for h in R for w in R if str(D:=[r[j:j+10-w]for r in d[i:i+10-h]]).count('0')==0],key=lambda x:str(x).count('2'))

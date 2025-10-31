@@ -1,0 +1,1 @@
+exec('def p(d,E=enumerate):'+'I,J=divmod(sum(d:=[*map(list,zip(*d[::-1]))],[]).index(8),10);[exec("d[I][J]=c;r[j]=0")for i,r in E(d)for j,c in E(r)if j<J<8!=c>0<=i<I!=d];'*4+'return d')

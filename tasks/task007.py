@@ -1,1 +1,1 @@
-p = lambda d,R=range(7):[[[t[0]for t in{*[(d[r][c],(r+c))for r in R for c in R if d[r][c]]}if not(t[1]-r-c)%3][0]for c in R]for r in R]
+p=lambda d,R=range(7):[[{(i+j)%3:d[i][j]for i in R for j in R if d[i][j]}[(i+j)%3]for j in R]for i in R]

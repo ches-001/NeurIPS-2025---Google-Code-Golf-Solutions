@@ -1,1 +1,1 @@
-E=enumerate;p=lambda d:[[c if not c else d[9*(i>9-i)][0]if all(d[0])else d[0][9*(j>9-j)]for j,c in E(r)]for i,r in E(d)]
+E=enumerate;p=lambda d:[[(c>0)*[d[0][9*(j>9-j)],d[9*(i>9-i)][0]][all(d[0])]for j,c in E(r)]for i,r in E(d)]

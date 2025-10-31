@@ -1,0 +1,1 @@
+def p(d):[exec('d[i+(y:=w.index(0))//2][j+y%2]=1')for k in range(36)if sum(w:=d[i:=k//6][(j:=k%6):j+2]+d[i+1][j:j+2])>23];return d

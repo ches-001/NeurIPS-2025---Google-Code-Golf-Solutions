@@ -1,0 +1,1 @@
+def p(d,R=range(13),F=filter,Z=zip,S=sorted):A,B=Z(*[(i,j)for i in R for j in R if d[i][j]==4]);I,*_,X=S(A);J,*_,Y=S(B);W=Y-J-1;P=[[0]*W];return[R[:1]+[*[r[::-1],r][max(r[:W//2])==R[0]]]+R[-1:]for r,R in Z(P+[*Z(*F(any,Z(*F(any,[[[d[i][j],0][I<=i<=X and J<=j<=Y]for j in R]for i in R]))))]+P,[r[J:Y+1]for r in d[I:X+1]])]

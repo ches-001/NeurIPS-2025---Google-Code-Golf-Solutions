@@ -1,4 +1,1 @@
-def p(d):
- x=max(h:=len(d),w:=len(d[0]))
- if w>h:d=[*zip(*d)]
- A=[(c:=[*map(list,d[i*3:i*3+3])],sum(map(bool,sum(c,[]))))for i in range(x//3)];d=min(A,key=lambda s:[*zip(*A)][1].count(s[1]))[0];return[d,[*zip(*d)]][w>h]
+def p(d):B=max(H:=len(d),W:=len(d[0]));d=[d,[*zip(*d)]][H<W];D=[d[a*3:a*3+3]for a in range(B//3)];F=lambda d:[[*map(bool,r)]for r in d];return[s:=[a for a in D if F(a)not in[F(b)for b in D if b!=a]][0],[*zip(*s)]][H<W]

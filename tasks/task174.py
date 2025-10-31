@@ -1,0 +1,1 @@
+p=lambda d:[*zip(*[D for v in sum(d,[])if(D:=[[c for c,C in zip(r,d)if v in C]for r in zip(*d)if v in r])==D[::-1]][0])]

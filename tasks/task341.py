@@ -1,0 +1,1 @@
+F=lambda d,i,j:any(d[i][j:])&any(d[i][:j])and len({*d[i-1]})==len({*d[i+1]})==3;p=lambda d,E=enumerate:[[c or 8*(F(d,i,j)+F([*zip(*d)],j,i))for j,c in E(r)]for i,r in E(d)]

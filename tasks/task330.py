@@ -1,0 +1,1 @@
+p=lambda d,t=27,l=0:-t*d or p([[[[(h:=a>0)*b|a,h<<(l:=l+1)][a%2],h+(a.bit_count()==6)][t<5]*(t>3)or a for a,b in zip(r,[*r[1:],0])]for r in zip(*d[::-1])],t-1)

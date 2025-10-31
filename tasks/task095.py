@@ -1,1 +1,1 @@
-def p(d,R=range):A=R(-1,2);[d[i+a].__setitem__(j+b,d[i+a][j+b]or 1)for i in R(9) for j in R(9) if d[i][j]==5 for a in A for b in A];return d
+p=lambda d,E=enumerate:[[c|any(any(R[j-(j>0):j+2])for R in d[i-(i>0):i+2])for j,c in E(r)]for i,r in E(d)]

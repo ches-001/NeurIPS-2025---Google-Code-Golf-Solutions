@@ -1,0 +1,1 @@
+F=lambda d,a=0:[*zip(*filter(any,[(a:=b)for b in d if a!=b]))];p=lambda d:F(F(d))

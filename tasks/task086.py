@@ -1,0 +1,1 @@
+def p(d,E=enumerate):A=sum(d,[]);C={*A}-{0};[d:=[[[[c or[c,n:=max(C-{m:=min(C,key=A.count)}),b:=(t-2)//4,a:=b*2+3][r[j-a:j-b].count(m)==(a-b)],[c,[m,n][c==m]][c>0]][t==1],[c,n][c>0]][t<1]for j,c in E(r)]for r in zip(*d[::-1])]for t in range(24)];return[[[r[j],n][r[j-1:j+2]==[m]*3 and C[i-1:i+2]==(m,)*3]for j,C in E(zip(*d))]for i,r in E(d)]

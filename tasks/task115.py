@@ -1,1 +1,1 @@
-def p(d):B=len({*d[0]})==1;V=[dict.fromkeys([d[0],[*zip(*d)][0]][B])];return[V,[*zip(*V)]][B]
+p=lambda d:[V:=[[*dict.fromkeys([d,[*zip(*d)]][B:=len({*d[0]})<2][0])]],[*zip(*V)]][B]

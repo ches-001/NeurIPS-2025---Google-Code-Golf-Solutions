@@ -1,1 +1,1 @@
-def p(d):C=sum(d,[]);return[[max({*C},key=C.count)]*3]*3
+p=lambda d:[[max(C:=sum(d,[]),key=C.count)]*3]*3

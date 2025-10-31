@@ -1,0 +1,1 @@
+p=lambda d:[[[c,4][c>0<j%2]for j,c in enumerate(r)]for r in d]

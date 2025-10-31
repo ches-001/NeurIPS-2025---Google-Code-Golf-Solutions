@@ -1,9 +1,5 @@
-def p(d):
- A=range;R=A(10);M={};D={}
- for r in R:
-  for c in R:
-   if v:=d[r][c]:
-    if v not in D:
-     if v not in M:M[v]=r,c
-     else:f=M.pop(v);p=1 if r<f[0]else -1;q=1 if c<f[1]else -1;[d[r+p*u].__setitem__(c+q*u,v)for u in A(abs(r-f[0])+1)];D[f]=1
+def p(d,R=range(10)):
+ for c in{*sum(d,[])}-{0}:
+  (I,J),(X,Y)=[(i,j)for i in R for j in R if d[i][j]==c]
+  for r in d[I:X]:r[J]=c;J+=2*(Y-J>0)-1
  return d

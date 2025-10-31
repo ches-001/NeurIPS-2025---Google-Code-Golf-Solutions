@@ -1,0 +1,1 @@
+p=lambda d,R=range(10):[[[a:=max(sum(d,[])),5,5][min(max(abs(i-x),abs(j-y))for x in R for y in R if d[x][y])%(3-(f'{a}, 0, {a}'in str(d)))]for j in R]for i in R]

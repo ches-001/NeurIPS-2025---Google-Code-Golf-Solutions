@@ -1,0 +1,1 @@
+p=lambda d,E=enumerate:[[{20:1,25:4,30:2}.get(sum(r[max(0,j-1):j+2]+[*C[max(0,i-1):i+2]]),c)for j,(c,C)in E(zip(r,zip(*d)))]for i,r in E(d)]
